@@ -1,5 +1,5 @@
 {
-    "schemaVersion": "1.1",
+    "schemaVersion": "1.2",
     "acapPackageConf": {
         "setup": {
             "friendlyName": "Docker Daemon",
@@ -16,6 +16,9 @@
         },
         "installation": {
             "postInstallScript": "postinstallscript.sh"
+        },
+        "uninstallation": {
+            "preUninstallScript": "preuninstallscript.sh"
         },
         "configuration": {
             "paramConfig": [

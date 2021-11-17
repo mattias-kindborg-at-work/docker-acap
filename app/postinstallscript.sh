@@ -17,3 +17,7 @@ Wants=network-online.target
 [Service]
 Environment=PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/local/packages/dockerdwrapper
 EOF
+
+# Create ps symbolic link
+mkdir -p /usr/local/bin
+ln -s /usr/local/packages/dockerdwrapper/ps /usr/local/bin/ps
